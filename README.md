@@ -1,5 +1,5 @@
 # FreeGAN
-
+Generate your own GAN models for free
 
 Change this value in training.py
 num_epochs = 100
