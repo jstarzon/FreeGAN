@@ -5,7 +5,7 @@ Change this value in training.py
 num_epochs = 100
 Higher value, better result. This value changes how much iterations training model does through dataset.
 
-##how to start script:
+## how to start script:
 python Neural.py
 
 Work in progress...
