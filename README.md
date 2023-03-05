@@ -28,3 +28,5 @@ You can put any dataset to train. I decided to use anime pictures.
 ## Demo (4h model)
 ![](https://github.com/jstarzon/Anime-GAN-Neural-network/blob/main/evo.gif)
 
+## Old version:
+![](https://github.com/jstarzon/Anime-GAN-Neural-network)
