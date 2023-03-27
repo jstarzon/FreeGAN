@@ -21,11 +21,11 @@ def gpu():
     print("Using GPU:", tf.test.gpu_device_name())
 
 #Resume loop
-def resume_training(generator, discriminator, gan, model_dir, pics):
+def resume_training(generator, discriminator, gan, model_dir, pics, model_gan,model_disc,model_gen):
     print("Resuming training from checkpoint:", model_dir)
-    generator.load_weights(os.path.join(model_dir, 'generator_weights.h5'))
-    discriminator.load_weights(os.path.join(model_dir, 'discriminator_weights.h5'))
-    gan.load_weights(os.path.join(model_dir, 'gan_weights.h5'))
+    generator.load_weights(os.path.join(model_gen))
+    discriminator.load_weights(os.path.join(model_disc))
+    gan.load_weights(os.path.join(model_gan))
     training_loop(generator, discriminator, gan, model_dir, pics)
 
 def training_loop(generator, discriminator, gan, model_dir, pics):
