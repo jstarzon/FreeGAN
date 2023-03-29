@@ -6,9 +6,7 @@ num_epochs = 100
 Higher value, better result. This value changes how much iterations training model does through dataset.
 
 ## how to start script:
-python Neural.py
-
-Work in progress...
+python main.py
 
 ## What it does
 - Load pictures dataset
@@ -25,7 +23,7 @@ Work in progress...
 - Training values tweak so model is more accurate
 
 
-You can put any dataset to train. I decided to use anime pictures.
+You can put any dataset to train model. I decided to use anime pictures.
 
 ## Demo timelapse (4h model progress)
 ![](https://github.com/jstarzon/Anime-GAN-Neural-network/blob/main/evo.gif)
