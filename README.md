@@ -23,7 +23,7 @@ python main.py
 - Main Menu (Reset model, Resume training, Change dataset, Resolution picker)
 - Fancy graphs, realtime image viewer, Iteration counter (epochs), 
 - Training values tweak so model is more accurate
-
+- Tweaking model values straight from program, resizing resolution of dataset, multiple datasets.
 
 You can put any dataset to train model. I decided to use anime pictures.
 
