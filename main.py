@@ -6,9 +6,6 @@ from training import training_loop, resume_training
 from loader import pics_loader,model_loader,recent_models
 from models import make_generator_model, make_discriminator_model, define_gan
 from telemetry import date, data_csv
-import os
-import datetime
-import os    
 now = date()
 model_dir = 'models'
 single_pics='single'
@@ -69,9 +66,10 @@ def main():
         elif choice == '3':
             print("Resuming GAN...")
             models_tab = recent_models(model_dir)
-            model_gan = models_tab[0]
             model_disc = models_tab[1]
             model_gen = models_tab[2]
+            model_gan = models_tab[3]
+            print(model_gan,model_disc,model_gen)
             starting(model_gan,model_disc,model_gen)
         elif choice == '4':
             is_model_loaded = True

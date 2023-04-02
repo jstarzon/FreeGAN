@@ -2,7 +2,7 @@ import tensorflow as tf
 import numpy as np
 import os
 import matplotlib.pyplot as plt
-
+import datetime
 def recent_models(folder_path):
     keywords = ["discriminator_weights", "gan_weights", "generator_weights"]
     files = os.listdir(folder_path)
@@ -28,9 +28,10 @@ def chose_file(folder_path):
                 print("Invalid choice. Please try again.")
             else:
                 selected_file = os.path.join(folder_path, files[choice-1])
+                file_name = os.path.basename(selected_file)
                 modification_time = datetime.datetime.fromtimestamp(os.path.getmtime(selected_file))
                 print(f"You selected '{selected_file}' (last modified: {modification_time}).")
-                return selected_file
+                return file_name
         except ValueError:
             print("Invalid input. Please enter a number.")
             

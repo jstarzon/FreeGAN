@@ -23,9 +23,9 @@ def gpu():
 #Resume loop
 def resume_training(generator, discriminator, gan, model_dir, pics, model_gan,model_disc,model_gen):
     print("Resuming training from checkpoint:", model_dir)
-    generator.load_weights(os.path.join(model_gen))
-    discriminator.load_weights(os.path.join(model_disc))
-    gan.load_weights(os.path.join(model_gan))
+    generator.load_weights(os.path.join(model_dir,model_gen))
+    discriminator.load_weights(os.path.join(model_dir,model_disc))
+    gan.load_weights(os.path.join(model_dir,model_gan))
     training_loop(generator, discriminator, gan, model_dir, pics)
 
 def training_loop(generator, discriminator, gan, model_dir, pics):
