@@ -15,11 +15,13 @@ python main.py
 - Saves generated pictures into a folder
 - Saves telemetry for each epoch in .csv file
 - Resume training
+## In progress
+-Main menu (80% done)
+
 
 ## TODO
 - Main Menu (Reset model, Resume training, Change dataset, Resolution picker)
 - Fancy graphs, realtime image viewer, Iteration counter (epochs), 
-- Code cleaning (*μ_μ)
 - Training values tweak so model is more accurate
 
 
