@@ -1,4 +1,4 @@
-# FreeGAN
+# FreeGAN - Simple machine learning project
 Generate your own GAN models for free
 
 Change this value in training.py
